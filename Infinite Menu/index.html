@@ -1,0 +1,74 @@
+<!doctype html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  
+  <script src="js.js"></script>
+</head>
+<style>
+.ytimg{
+  width: 175px;
+}
+
+.link{
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+  color: royalblue;
+  background: white;
+}
+.selected{
+  background: royalblue;
+  color: white;
+}
+.selected > a{
+ color: white; 
+}
+.iframe{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background: black;
+  color: white;
+  border: 3px solid red;
+  resize: both;
+  overflow: auto;
+  line-height: 15px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+.Overlay{
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  left: 0px;
+  background: black;
+  opacity: 0.5;
+}
+iframe{
+  width: 98%;
+  height: 80%;
+  
+}
+a{
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+}
+</style>
+<body oncontextmenu="return false;" onload="javascript:parent.document.getElementById('r').focus()">
+  <div id="r" class="result"></div>
+  <div class="Overlay"></div>
+  <div class="iframe">
+    <iframe class="iframeiframe" src="" allowfullscreen="allowfullscreen"></iframe>
+    Click To Refocus WSAD and Arrow Keys
+  </div>
+	</body>
+</html>
